@@ -1,13 +1,139 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --dark-blue:#101E36;
+  --light-blue:#A0DCE7;
+  --white:#fff;
+  --yellow:#e8aa0f;
+  --pink:#ba6487;
+  --content-width-desktop: 1084px;
+  --h1-font:3rem;
+  --h2-font:2.5rem;
+  --h3-font:1.25rem;
+  --front-font:4rem;
+  --font-weight-heavy:900;
+  --font-weight-medium:800;
+  --font-weight-small:700;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Resets */
+* {
+  box-sizing: border-box;
+  user-select: none;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: europa, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--dark-blue);
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+/* Resets */
+
+/* Navbar */
+.section-container{
+  padding-top: 40px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-around;
+  background: var();
+}
+
+.logo{
+  font-weight: var(--font-weight-heavy);
+  font-size: var(--h1-font);
+  text-decoration: none;
+  color: var(--white);
+}
+
+nav{
+padding-top: 25px;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--white);
+  font-weight: var(--font-weight-medium);
+  font-size: 18px;
+  
+}
+nav ul{
+  list-style-type: none;
+}
+nav li{
+  display: inline;
+}
+li + li{
+  padding-left: 40px;
+}
+/* Navbar */
+
+/* Main */
+.home-container{
+  color: var(--white);
+  height: 350px;
+}
+
+.welcome h1{
+  font-weight: var(--font-weight-heavy);
+  font-size: var(--front-font);
+  padding-bottom: 20px;
+}
+
+.sec-1{
+  /* background-color: var(--light-blue); */
+  padding-top: 30px;
+  text-align: center;
+  width: 98%;
+  height: 350px;
+}
+
+.plans{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-evenly;
+  font-size: var(--h3-font);
+  text-shadow: 3px 3px #242222;
+}
+
+.plans p{
+  width: 400px;
+}
+
+.plansImg{
+  position: static;
+  width: 450px;
+  height: 450px;
+}
+
+.download{
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: var(--light-blue); */
+}
+.download img{
+  width: 300px;
+}
+/* Main */
