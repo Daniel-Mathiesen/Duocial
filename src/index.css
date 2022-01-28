@@ -41,6 +41,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--dark-blue);
+  background-image: url(https://library.kissclipart.com/20180917/zw/kissclipart-white-waves-png-clipart-wave-clip-art-bccff0b201f25df0.png);
+  background-size: cover;
 }
 
 img,
