@@ -139,3 +139,56 @@ li + li{
   width: 300px;
 }
 /* Main */
+
+/* Sign up */
+.sign-up-form{
+  position: relative;
+  top: -100px;
+  width: 390px;
+  box-shadow: 5px 6px 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 8% auto 0;
+  text-align: center;
+}
+.sign-up-form p{
+  position: relative;
+  right: 25px;
+}
+.sign-up-form h1{
+  margin-bottom: 30px;
+}
+.input-box{
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #999;
+  outline: none;
+}
+.tos{
+  margin: 10px;
+}
+button{
+  color: gray;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: var(--h3-font);
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+hr{
+  margin-top: 20px;
+}
+.or{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: var(--font-weight-small);
+}
+.sign-up-form a{
+  text-decoration:none;
+  color: var(--light-blue);
+}
+/* Sign up */
