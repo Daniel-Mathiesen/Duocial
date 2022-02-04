@@ -10,10 +10,14 @@ const SignIn = () => {
                 <form>
                     <input type="email" className="input-box" placeholder="Your Email"/>
                     <input type="password" className="input-box" placeholder="Your Password"/>
+                    <div className="CheckPass">
+                    <p className="tos"><span><input type="checkbox"/></span> Remember me</p>
                     <button type="button" className="signup-btn">Sign in</button>
+                    <a href="#"><Link to="/">Forgot Password?</Link></a>
+                    </div>
                     <hr />
                     <p className="or">OR</p>
-                    <p>Do you not have an existing account? <a href="#"><Link to="/">Sign up</Link></a></p>
+                    <p>Don't have an existing account? <a href="#"><Link to="/">Sign up</Link></a></p>
                 </form>
             </div>
           </div>

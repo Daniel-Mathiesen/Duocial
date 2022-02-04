@@ -51,14 +51,185 @@ video {
 }
 
 /* Resets */
+@media (min-width:1281px){ 
+  /* hi-res laptops and desktops */ 
+  /* Navbar */
+  .section-container{
+    padding-top: 40px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: space-around;
+    background: var();
+  }
+  
+  .logo{
+    font-weight: var(--font-weight-heavy);
+    font-size: var(--h1-font);
+    text-decoration: none;
+    color: var(--white);
+  }
+  
+  nav{
+  padding-top: 25px;
+  }
+  
+  nav a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: var(--font-weight-medium);
+    font-size: 18px;
+    
+  }
+  nav ul{
+    list-style-type: none;
+  }
+  nav li{
+    display: inline;
+  }
+  li + li{
+    padding-left: 40px;
+  }
 
-/* Navbar */
+  .burgerMenu{
+    display: none;
+  }
+  /* Navbar */
+  
+  /* Main */
+  .home-container{
+    color: var(--white);
+    height: 350px;
+  }
+  
+  .welcome h1{
+    font-weight: var(--font-weight-heavy);
+    font-size: var(--front-font);
+    padding-bottom: 20px;
+  }
+  
+  .sec-1{
+    /* background-color: var(--light-blue); */
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .plans{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    font-size: var(--h3-font);
+    text-shadow: 3px 3px #242222;
+  }
+  
+  .plans p{
+    width: 400px;
+  }
+  
+  .plansImg{
+    position: static;
+    width: 450px;
+    height: 450px;
+  }
+  
+  .download{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: var(--light-blue); */
+  }
+  .download img{
+    width: 300px;
+  }
+  /* Main */
+  
+  /* Sign up */
+  .sign-up-form{
+    position: relative;
+    top: -100px;
+    width: 390px;
+    box-shadow: 5px 6px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+  }
+  .sign-up-form p{
+    position: relative;
+    right: 25px;
+  }
+  .sign-up-form h1{
+    margin-bottom: 30px;
+  }
+  .input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+  }
+  .tos{
+    margin: 10px;
+  }
+  button{
+    color: gray;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: var(--h3-font);
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  hr{
+    margin-top: 20px;
+  }
+  .or{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: var(--font-weight-small);
+  }
+  .sign-up-form a{
+    text-decoration:none;
+    color: var(--light-blue);
+  }
+  .CheckPass{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .CheckPass p{
+    position: relative;
+    right: 45px;
+    margin-bottom: 15px;
+  }
+  .signup-btn{
+    margin-bottom: 20px;
+  }
+  /* Sign up */
+}
+
+/* Medias */
+
+
+
+
+
+
+@media screen and (max-width:767px)  { 
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  
+  /* Navbar */
 .section-container{
-  padding-top: 40px;
-  padding-bottom: 120px;
   display: flex;
-  justify-content: space-around;
-  background: var();
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 15px;
 }
 
 .logo{
@@ -66,10 +237,12 @@ video {
   font-size: var(--h1-font);
   text-decoration: none;
   color: var(--white);
+  padding-left: 20px;
 }
 
 nav{
 padding-top: 25px;
+display: none;
 }
 
 nav a{
@@ -88,6 +261,11 @@ nav li{
 li + li{
   padding-left: 40px;
 }
+
+.burgerMenu{
+  width: 40px;
+  height: 40px;
+}
 /* Navbar */
 
 /* Main */
@@ -99,24 +277,30 @@ li + li{
 .welcome h1{
   font-weight: var(--font-weight-heavy);
   font-size: var(--front-font);
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+}
+
+.welcome p{
+  padding-bottom: 100px;
 }
 
 .sec-1{
   /* background-color: var(--light-blue); */
-  padding-top: 30px;
+  padding-top: 20px;
   text-align: center;
-  width: 98%;
-  height: 350px;
+  width: 100%;
 }
 
 .plans{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content:center;
+  width: 100%;
   font-size: var(--h3-font);
   text-shadow: 3px 3px #242222;
+  position: relative;
+  left: 25px;
 }
 
 .plans p{
@@ -133,6 +317,7 @@ li + li{
   padding-top: 50px;
   display: flex;
   justify-content: space-evenly;
+  display: none;
   /* background-color: var(--light-blue); */
 }
 .download img{
@@ -191,4 +376,23 @@ hr{
   text-decoration:none;
   color: var(--light-blue);
 }
-/* Sign up */
+.CheckPass{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.CheckPass p{
+  position: relative;
+  right: 45px;
+  margin-bottom: 15px;
+}
+.signup-btn{
+  margin-bottom: 20px;
+}
+}
+
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
